@@ -1,0 +1,260 @@
+
+.body {
+    background: var(--Primario, #091021);
+    width: 1440px;
+    height: 1270px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.form {
+    display: flex;
+    margin-top: 350px;
+    width: 467px;
+    height: 592px;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    flex: 1;
+    text-align: center;
+    order: 5;
+    position: relative;
+    top: 30%;
+    left:50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    border-radius: 10px;
+    /*-webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        */:;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.form_logo {
+    width: 467px; /* Ancho del contenedor */
+    height: 200px; /* Altura del contenedor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.logo-container {
+    /*width: 120px;
+    height: 100.606px;
+    flex-shrink: 0;*/
+    display: inline-flex;
+    height: 96.97px;
+    padding: 55px 20.364px 16.97px 3px;
+    align-items: center;
+    flex-shrink: 0;
+    
+}
+.img {
+   
+width: 176px;
+height: 160px;
+flex-shrink: 0;
+
+}
+.text h6 {
+
+    color: var(--neutro-oscuro, #010612);
+
+/* H6 */
+
+
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+h3 {
+    color: var(--Primario, #06122F);
+text-align: center;
+
+/* Texto-Btn */
+
+color: var(--Primario, #091021);
+text-align: center;
+
+/* Texto-Btn */
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.4px;
+
+
+}
+
+
+.button {
+    width: 430.125px;
+    height: 47.771px;
+    flex-shrink: 0;
+    background-color: #F02B2B;
+    fill: var(--secundario, #F02B2B);
+    filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.25)) ;
+    -webkit-filter:;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.btn {
+    fill: var(--secundario, #F02B2B);
+    filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.25));
+    -webkit-filter:;
+}
+    
+    
+    
+    .bt {
+        width: 136.013px;
+        height: 47.771px;
+        flex-shrink: 0;
+
+    }
+
+
+.contrasena{
+    width: 171px;
+    height: 12px;
+    flex-shrink: 0;
+    color: var(--primario-L-1, #1A47B6);
+    
+    margin-top: 20px;
+
+/* Texto-chico */
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+
+
+}    
+
+/*fat footer-----------------------------*/
+
+ .fat-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas con el mismo ancho */
+    
+    color: white;
+    padding: 20px 0;
+    width: 1440px;
+   height: 450px;
+  flex-shrink: 2;
+   border-top: 4px solid var(--secundario, #F02B2B);
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background: var(--Primario, #091021);
+
+}
+
+/* Estilo para cada columna */
+ .columna {
+    padding: 10px;
+    text-align: center;
+}
+
+.columna h3 {
+    margin: 0;
+}
+
+.columna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.columna ul li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.columna p {
+    color: white;
+    text-decoration: none;
+}
+
+.columna p:hover {
+    text-decoration: underline;
+}
+ 
+p{
+    color: #FFF;
+
+/* Body-normal */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+}
+ 
+.blanca{
+    color: #FFF;
+
+/* H3 */
+font-family: Roboto;
+font-size: 31px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.columna .iconos {
+    margin-top: auto; /* Empuja los iconos hacia abajo */
+    display: flex;
+    justify-content: space-between;
+    width: 90px; /* Ancho total de los iconos (45px + 45px) */
+}
+
+/* Estilo para los iconos individuales */
+.columna .iconos img {
+    width: 45px;
+    height: 45px;
+    filter: grayscale(100%) invert(1);
+    margin-inline: 20px;
+    -webkit-filter: grayscale(100%) invert(1);
+}
+
+.derechos-reservados {
+
+    width: 1440px;
+   height: 58px;
+    flex-shrink: 0;
+    background: var(--secundario, #F02B2B);
+   
+    
+    text-align: center;
+    padding: 10px 0;
+   
+}
+.negrita{
+    color: #000;
+    
+text-align: center;
+
+/* Body-negrita */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
