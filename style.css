@@ -1,76 +1,39 @@
-
-
-body{
-    width: 100%;
-    height: 1270px; 
-
-}
-
 .body {
-    background: var(--Primario, #091021);
+    height: 820px;
     width: 100%;
-    height: 850px; 
+    background: var(--Primario, #091021);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items:center;
+    justify-content: flex-start; /* Para alinear el contenido en la parte superior */
+    align-items: center;
+    
+    padding-top: 50px;/* Agrega un margen superior de 50px */
 }
+
+
 .form {
     display: flex;
-    margin-top: 350px;
     width: 467px;
-    height: 592px;
+    height: 300px;
     flex-shrink: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #FFF;
-    flex: 1;
     text-align: center;
-    order: 5;
-    position: relative;
-    top: 30%;
-    left:50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    margin: auto;
-    
-    /*-webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-        */
+    padding-bottom: 50px;
+    padding-top: 50px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.form_logo {
-    width: 467px; /* Ancho del contenedor */
-    height: 200px; /* Altura del contenedor */
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-}
-.logo-container {
-    /*width: 120px;
-    height: 100.606px;
-    flex-shrink: 0;*/
-    display: inline-flex;
-    height: 96.97px;
-    padding: 55px 20.364px 16.97px 3px;
-    align-items: center;
-    flex-shrink: 0;
-    
-}
-.img {
-   
-width: 176px;
-height: 160px;
-flex-shrink: 0;
 
+.logo-container{
+    margin-top: 200px;
 }
+
+
 .text h6 {/* H6 */
 color: var(--neutro-oscuro, #010612);
 font-family: Roboto;
@@ -235,6 +198,10 @@ button[type="submit"] {
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 /* Estilo para el botón de Facebook */
@@ -304,10 +271,10 @@ button[type="submit"] {
     grid-template-columns: repeat(3, 1fr); /* Tres columnas con el mismo ancho */
     
     color: white;
-    padding: 20px 0;
-    width: 1440px;
+    padding: 20px ;
+    width: 100%;
    height: 450px;
-  flex-shrink: 2;
+  flex-shrink: 0;
    border-top: 4px solid var(--secundario, #F02B2B);
     flex-direction: column;
     justify-content: center;
@@ -385,7 +352,7 @@ line-height: normal;
 
 .derechos-reservados {
 
-    width: 1440px;
+    width: 100%;
    height: 58px;
     flex-shrink: 0;
     background: var(--secundario, #F02B2B);

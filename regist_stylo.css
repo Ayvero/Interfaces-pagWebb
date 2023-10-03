@@ -4,6 +4,7 @@
 
 .body {
     height: 1000px;
+    width: 100%;
     background: var(--Primario, #091021);
     display: flex;
     flex-direction: column;
@@ -15,7 +16,7 @@
 
 .form {
     display: flex;
-    width: 400px;
+    width: 482px;
     height: 725px;
     flex-shrink: 0;
     flex-direction: column;
@@ -23,19 +24,27 @@
     align-items: center;
     background: #FFF;
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     padding-top: 50px;
+    border-radius: 10px;
+    filter: drop-shadow(4px 4px 0px rgba(180, 178, 178, 0.25)) ;
+    -webkit-filter: drop-shadow(4px 4px 0px rgba(177, 174, 174, 0.25)) ;
+    
+    /*padding-bottom: 50px;
+    padding-top: 50px;*/
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
 
+
 .logo-container{
     margin-top: 200px;
+    margin-bottom: 20px;
 }
 
-.text h6 {/* H6 */
+.text h6 {
     color: var(--neutro-oscuro, #010612);
     font-family: Roboto;
     font-size: 16px;
@@ -44,7 +53,7 @@
     line-height: normal;
     }
     
-    h3 {/* Texto-Btn */
+    h3 {
     color: var(--Primario, #06122F);
     text-align: center;
     font-family: Roboto;
@@ -68,12 +77,12 @@
         -moz-border-radius: 8px;
         -ms-border-radius: 8px;
         -o-border-radius: 8px;
-    }
+}
     .btn {
         fill: var(--secundario, #F02B2B);
         filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.25));
         -webkit-filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.25));
-    }
+}
         
         
         
@@ -83,6 +92,7 @@
             flex-shrink: 0;
     
     }
+    
 
     label {
         width: 300px;
@@ -100,95 +110,66 @@
         -moz-text-decoration-line: none;
     }
 
-    .requeridos{
-        width: 104px;
-        height: 9.871px;
-        flex-shrink: 0;
-        color: var(--Acento, #538C00);
+    input:required {
+        border: 1px solid red;
+    }
+    
+    
+
+    .etiq{
         text-align: left;
-        display: block;
-        margin-bottom: 5px;
+        width: 239.795px;
+        height: 21.835px;
+        flex-shrink: 0;
+        color: var(--Primario, #091021);
+    
 
-/* Texto-chico */
-font-family: Roboto;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-
-    }
-    .form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
     }
 
+ /*
+.etq{
+    text-align: left;
+        color: var(--Acento, #538C00);
+        
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    
+        text-decoration: none;
+        
 
-    /*input[type="email"],*/
+    }
+*/
+    input[type="email"],
     input[type="password"],
-    input[type="text"]
-   /* input[type="number"]*/ {
+    input[type="text"],
+    input[type="number"] {
     width: 369px;
     height: 33px;
-    flex-shrink: 0;
     border-radius: 5px;
     background: var(--primario--L2, #9AAFE4);
-    /*sombra-cards*/box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
-    /*-webkit-border-radius:;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+    webkit-border-radius:5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
-    */-o-border-radius:4px 4px 0px 0px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 5px;
     -o-border-radius: 5px;
-}
-
-input[type="number"]{
-    display: inline-block;
-    width: 40px;
-height: 33.266px;
-flex-shrink: 0;
-    
-    border-radius: 5px;
-    background: var(--primario--L2, #9AAFE4);
-    /*sombra-cards*/box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
-    /*-webkit-border-radius:;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    */-o-border-radius:4px 4px 0px 0px rgba(0, 0, 0, 0.25);
     -webkit-border-radius: 5px;
-    -o-border-radius: 5px;
-
-    
+    -o-border-radius:5px;
     
 }
 
-
-input[type="email"]{
-    display: inline-block;
-width: 200px;
-height: 33.266px;
-
-   
-    border-radius: 5px;
-    background: var(--primario--L2, #9AAFE4);
-    /*sombra-cards*/box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
-    /*-webkit-border-radius:;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    */-o-border-radius:4px 4px 0px 0px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 5px;
-    -o-border-radius: 5px;
-
-    
-
-}
-
-  /*Estilos de los inputs*/
 
     input[type="password"]::placeholder,
-    input[type="text"]::placeholder{
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    input[type="number"]::placeholder{
         width: 100%;
         height: 21px;
         flex-shrink: 0;
@@ -203,24 +184,6 @@ height: 33.266px;
 }
 
 
-input[type="email"]::placeholder,
-    input[type="number"]::placeholder {
-
-        
-        height: 21px;
-        flex-shrink: 0;
-        color: #3b3737;
-        font-family: Roboto;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        text-decoration-line: none;
-        -moz-text-decoration-line:none;
-
-    }
-
-
 
 .etiq{
     text-align:left;
@@ -228,14 +191,12 @@ input[type="email"]::placeholder,
     height: 21.835px;
     flex-shrink: 0;
     color: var(--Primario, #091021);
-
-/* Texto-chico */
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-decoration: none;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
 }
 
 
@@ -248,16 +209,16 @@ padding-bottom: 15px;
 
 button[type="submit"] {
     margin-top: 5px; 
-    margin-bottom: 45px; /* Agrega margen superior para separar el botón del margen inferior del formulario */
+    margin-bottom: 45px; 
 }
 
-/* Estilo para el botón de Facebook */
+
 .facebook-button {
     width: 369px;
     height: 33.202px;
     flex-shrink: 0;
     padding-top: 145px;
-    margin: 20px;
+    margin: 10px;
     background-color: var(--secundario, #F02B2B);
     /*ColordefondodeFacebook*/color: rgba(9, 16, 33, 1);
     /*Colordeltexto*/padding: 10px 20px;
@@ -288,17 +249,17 @@ button[type="submit"] {
     font-size: 34px;
 }
 
-/* Estilo para el ícono de Facebook */
+
 .facebook-button i {
     margin-right: 10px;
     font-size: 20px;
     text-align: center;
-    /* Espaciado a la derecha del icono */
+    color: #06122F;
+    
 }
 
     
     
-    
 
 
 
@@ -308,19 +269,6 @@ button[type="submit"] {
 
 
 
-
-
-
-
-
-
-
-
-
-
-    
-
-/*------------------estilos de los inputs------------*/
 
 
 
