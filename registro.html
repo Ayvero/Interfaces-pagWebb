@@ -4,9 +4,10 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="regist_stylo.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
+
     <title>Registro</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
 
                  <div class="logo-container">
 
-                    <img src="logo2.png" class="img">
+                    <img src="imgA/logo-claro.png" class="img">
                 </div>
                    
                 </div>
@@ -33,12 +34,12 @@
                      <div class="form_button">
 
                         <button class="facebook-button">
-                                 <i class="fab fa-facebook"></i> Regístrate con Facebook
+                                 <i class="fab fa-facebook"></i><a href="loading.html"> Regístrate con Facebook</a>
                              </button>
              
                              
-                             <button class="facebook-button">
-                                 <i class="fab fa-google"></i> Regístrate con Google
+                             <button class="google-button">
+                                 <i class="fab fa-google"></i> <a href="loading.html"> Regístrate con Google</a>
                             </button>
                          </div>
                          <label for="campos"><p class="etq ">Campos obligatorios *</p></label>
@@ -81,18 +82,22 @@
              
                              </div>
 
-                             <div class="contenedor">
-                                <div class="cuadrado"></div>
-                                <p class="texto-chico">No soy un robot</p>
-                                <img src="recapcha.png" alt="Imagen" class="imagen">
+                            <div class="contenedor">
+                                <input type="checkbox" id="miCheckbox" required>
+                                <label for="miCheckbox">
+                                    <div class="cuadro"></div>
+                                    <span class="texto">No soy un robot</span>
+                                    <img src="imgA/recapcha.png" alt="Imagen" class ="recapcha">
                                 
+                                   
+                                </label>
                             </div>
                             
                         
                               
                              <div class="form_button">
                              
-                                  <button type="submit" class="button btn  bt efectos"><h3>Ingresar</h3></button>
+                                  <button type="submit" class="button btn  bt efectos"><h3><a href="loading.html">Ingresar</a></h3></button>
                                  </div>
              
                                 
@@ -125,8 +130,8 @@
 
                <div class="iconos">
 
-                 <img src="facebook.png">
-                  <img src="ins.png">
+                 <img src="imgA/facebook.png">
+                  <img src="imgA/ins.png">
 
 
                      </div>
@@ -205,7 +210,7 @@
 
         <p class="negrita">Game Pro. Todos los derechos reservados. 2023</p>
        </div>
-    </div
+    </div>
    </body>
 </html>
 

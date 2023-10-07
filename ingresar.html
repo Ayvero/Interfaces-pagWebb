@@ -4,7 +4,8 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="regist_stylo.css">
+    <link rel="stylesheet" href="css/style.css">
+   
     
     <title>Ingresar</title>
 </head>
@@ -21,25 +22,28 @@
 
                  <div class="logo-container">
 
-                    <img src="logo2.png" class="img">
+                    <img src="img/logo-claro.png" class="img">
                 </div>
                    
                 </div>
+
+
         
-
-        <form class="form"> 
-
+            <form id="miFormulario">
+<div class="form">
             <div class="email">
                 <label for="email"><p class="etiq" >* Introduce tu email:</p></label>
-                <input type="email" id="email" placeholder ="Introduce tu Email" required>
+                <input type="email" name="correo"  id="email" placeholder ="Introduce tu Email" required>
             </div>
             <div class="input-container">
                 <label for="password"><p class="etiq">* Introduce tu contraseña:</p></label>
-                <input type="password" id="password" placeholder="**********" required>
+                <input type="password" name="contrasena"  id="password" placeholder="**********" required>
             </div>
-            <button type="submit" class="button btn  bt efectos"><h3>Ingresar</h3></button>
+            <button type="submit" class="button btn  bt efectos"><h3><a href="loading.html">Ingresar</a></h3></button>
 
-  
+            <div id="mensaje-confirmacion" class="oculto">¡Registro exitoso!</div>
+            
+        </div>
             </form>
         </div>
                   </div>
@@ -67,8 +71,8 @@
 
            <div class="iconos">
 
-             <img src="facebook.png">
-              <img src="ins.png">
+             <img src="imgA/facebook.png">
+              <img src="imgA/ins.png">
 
 
                  </div>
@@ -147,7 +151,8 @@
 
     <p class="negrita">Game Pro. Todos los derechos reservados. 2023</p>
    </div>
-</div
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
 

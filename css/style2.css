@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+/*MOBILE*/
+
+header{
+    display: flex;
+    justify-content: center;
+}
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.img-hamburguesa{
+    display: flex;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.img-portada{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.img-logo{
+    width: 100px;
+    margin-right:150px;
+}
+.menu-desplegable{
+    display: flex;
+}
+
+img{
+    width: 40px;
+}
+
+.busqueda{
+    display: none;
+}
+
+.imagen-usuario{
+    display: none;
+}
+ul.navegacion{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    color: white;
+}
+
+ul.navegacion.show{
+    display: flex ;
+    background-color:var(--Primario, #091021);
+}
+
+ul.navegacion li{
+    list-style: none;
+    margin: 5px;
+    padding: 10px;
+}
+
+ul.navegacion li:hover{
+    background-color: var(--secundario, #F02B2B);
+}
+
+
+section h2{
+    display: flex;
+    justify-content: center;
+}
+
+section img {
+    width: 100%;
+    height: 236px;
+}
+
+.imagenes-carrusel{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.imagenes-carrusel::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--Primario, #091021);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+.inferior-card{
+    color: white;
+    border-radius: 0px 0px 8px 8px;
+    width: 193px;
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.precioYboton{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+.btn-jugar{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.fat-footer{
+   display: flex;
+   flex-flow: wrap;
+   color: white;
+   background: var(--Primario, #091021);
+   width: 100%;
+   height: 10%;
+   padding: 20px 0;
+   border-top: 4px solid var(--secundario, #F02B2B);
+}
+
+.columna .iconos {
+    margin: 10px; /* Empuja los iconos hacia abajo */
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Estilo para los iconos individuales */
+.columna .iconos img {
+    width: 25px;
+    height: 25px;
+    filter: grayscale(100%) invert(1);
+    -webkit-filter: grayscale(100%) invert(1);
+    margin: 10px;
+    
+}
+
+.derechos-reservados {
+    width: 100%;
+    height: 10px;
+    background: var(--secundario, #F02B2B);
+    text-align: center;
+    padding: 10px 0;
+   
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 3px;
+}
+
+.categorias{
+    margin-left: 10px;
+}
+.terminos{
+    
+    justify-content: center;
+    align-items: center;
+    padding: 75px;
+}
+
+.blanca{
+    margin-top: 10px;
+}
+/*DESKTOP*/
+@media (min-width: 1024px){
+
+    .btn-menu{
+        margin: 30px;
+    }
+
+    header{
+        background-color: #091021;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        
+    }
+
+    .busqueda p{
+        color: #091021;
+    }
+
+    .busqueda{
+        display: flex;
+        border-radius: 5px black solid;
+        background-color: #DDE3F0;
+        width: 100%;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+        padding: 5px;
+        border-radius: 8px;
+        margin-right: 450px;
+        justify-content: space-between;
+    }
+    
+    .img-buscar{
+        display: flex;
+        justify-content: end;
+        width: 20px;
+    }
+
+    .imagen-usuario{
+        display: flex;
+        width: 75px;
+        padding: 20px;
+    }
+
+    .contenedor-portada{
+        position: relative;
+        width: 100%;
+        max-width: 100%; /* ajusta el ancho según tus necesidades */
+        margin: 0 auto;
+        background-color:#000000; /*Para que se vea oscuro el fondo*/ 
+    }
+    .imagen-portada{
+        opacity: 0.4; /*le damos opacidad a la imagen*/
+        
+    }
+
+
+    /*CORREGIR*/
+    .texto {
+        position: absolute;
+        top: 70%;
+        left: 30%;
+        transform: translate(-50%, -50%);   
+        color: white;
+        font-family: sans-serif;
+        padding: 20px;
+        z-index: 1; /* Asegura que el texto esté en primer plano */
+        font-size: 24px;
+        text-align: center;
+      }
+
+    /*fat footer-----------------------------*/
+
+.fat-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas con el mismo ancho */
+    
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+   height: 10%;
+  flex-shrink: 2;
+   border-top: 4px solid var(--secundario, #F02B2B);
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background: var(--Primario, #091021);
+
+}
+
+/* Estilo para cada columna */
+ .columna {
+    padding: 10px;
+    text-align: center;
+}
+
+.columna h3 {
+    margin: 0;
+}
+
+.columna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.columna ul li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.columna p {
+    color: white;
+    text-decoration: none;
+}
+
+.columna p:hover {
+    text-decoration: underline;
+}
+ 
+p{
+    color: #FFF;
+
+/* Body-normal */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+}
+ 
+.blanca{
+    color: #FFF;
+
+/* H3 */
+font-family: Roboto;
+font-size: 31px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.columna .iconos {
+    margin-top: auto; /* Empuja los iconos hacia abajo */
+    display: flex;
+    justify-content: space-between;
+    width: 90px; /* Ancho total de los iconos (45px + 45px) */
+}
+
+/* Estilo para los iconos individuales */
+.columna .iconos img {
+    width: 45px;
+    height: 45px;
+    filter: grayscale(100%) invert(1);
+    margin-inline: 20px;
+    -webkit-filter: grayscale(100%) invert(1);
+}
+
+.derechos-reservados {
+
+    width: 100%;
+   height: 20px;
+    flex-shrink: 0;
+    background: var(--secundario, #F02B2B);
+    text-align: center;
+    padding: 10px 0;
+   
+}
+.negrita{
+    color: #000;
+    
+text-align: center;
+
+/* Body-negrita */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+}
