@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
           setTimeout(incrementPercent, 50); // Incrementa el porcentaje cada 50 ms
       } else {
           // Redirige a la siguiente página cuando llega al 100%
-          window.location.href = "index.html";
+          window.location.href = "home.html";
       }
   }
 
